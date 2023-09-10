@@ -1,8 +1,6 @@
 # node-api-poloniex
 
-**WARNING: Due to lack of funds on Poloniex, order and withdrawal API's are untested.**
-
-Non-official implementation of Poloniex's API's. Developed for personal use.
+**Non-official implementation of Poloniex's API's. Developed for personal use.
 
 For support on using the API's or development issues, please refer to the official API documentation. For questions regarding this package, please consult the code first.
 
