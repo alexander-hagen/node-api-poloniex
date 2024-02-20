@@ -30,8 +30,8 @@ Websocket keep connection alive by sending ping at 20 sec intervals
 | :----                   | :---- |
 | getPrices               | https://api-docs.poloniex.com/spot/api/public/market-data#prices                |
 | getMarkPrice            | https://api-docs.poloniex.com/spot/api/public/market-data#mark-price            |
-| getMarkPrice            | https://api-docs.poloniex.com/spot/api/public/market-data#mark-price-components |
-| getOrderbook            | https://api-docs.poloniex.com/spot/api/public/market-data#order-book            |
+| getMarkPriceComponents  | https://api-docs.poloniex.com/spot/api/public/market-data#mark-price-components |
+| getOrderBook            | https://api-docs.poloniex.com/spot/api/public/market-data#order-book            |
 | getCandles              | https://api-docs.poloniex.com/spot/api/public/market-data#candles               |
 | getTrades               | https://api-docs.poloniex.com/spot/api/public/market-data#trades                |
 | getTicker24h            | https://api-docs.poloniex.com/spot/api/public/market-data#ticker                |
