@@ -108,7 +108,7 @@ Websocket keep connection alive by sending ping at 20 sec intervals
 | cancelSpotOrder         | https://api-docs.poloniex.com/spot/api/private/order#cancel-order-by-id            |
 | cancelSpotOrders        | https://api-docs.poloniex.com/spot/api/private/order#cancel-multiple-orders-by-ids |
 | cancelAllSpotOrders     | https://api-docs.poloniex.com/spot/api/private/order#cancel-all-orders             |
-| doKillSwitch            | https://api-docs.poloniex.com/spot/api/private/order#kill-switch                   |
+| setKillSwitch           | https://api-docs.poloniex.com/spot/api/private/order#kill-switch                   |
 | getKillSwitch           | https://api-docs.poloniex.com/spot/api/private/order#kill-switch-status            |
 | getOrderHistory         | https://api-docs.poloniex.com/spot/api/private/order-history#orders-history        |
 
