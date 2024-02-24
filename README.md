@@ -185,8 +185,8 @@ Websocket keep connection alive by sending ping at 20 sec intervals
 | subscribeCandles unsubscribeCandles             | candles                   | |
 | subscribeTrades unsubscribeTrades               | trades                    | |
 | subscribeTicker unsubscribeTicker               | ticker                    | |
-| subscribeOrderbook unsubscribeOrderbook         | book                      | |
-| subscribeFullOrderbook unsubscribeFullOrderbook | book.snapshot book.update | |
+| subscribeOrderBook unsubscribeOrderBook         | book                      | |
+| subscribeFullOrderBook unsubscribeFullOrderBook | book.snapshot book.update | |
 
 ### Private API
 
