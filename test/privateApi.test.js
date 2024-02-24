@@ -95,11 +95,21 @@ describe('Orders', () => {
   // PoloniexPrivate.prototype.createSpotOrder = async function(options) {
   // PoloniexPrivate.prototype.createSpotOrders = async function(options) {
   // PoloniexPrivate.prototype.replaceSpotOrder = async function(id,options) {
-  // PoloniexPrivate.prototype.getSpotOrders = async function(options={}) {
+
+  test('Test getSpotOrders() function', async () => {
+    expect(stringIsArray(await privateAPI.getSpotOrders())).toBe(true);
+  }, timeout);
+
   // PoloniexPrivate.prototype.getSpotOrder = async function(options) {
   // PoloniexPrivate.prototype.cancelSpotOrder = async function(options) {
   // PoloniexPrivate.prototype.cancelSpotOrders = async function(options) {
+
   // PoloniexPrivate.prototype.cancelAllSpotOrders = async function(options={}) {
+
+  test('Test cancelAllSpotOrders() function', async () => {
+    const result=await privateAPI.cancelAllSpotOrders()
+    expect(result === "" || stringIsJSON(result)).toBe(true); // "" if none, {} if 1+ orders to cancel
+  }, timeout);
 
   test('Test setKillSwitch() function', async () => {
     options={timeout: 10};
