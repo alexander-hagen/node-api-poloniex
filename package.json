@@ -1,6 +1,6 @@
 {
   "name": "node-api-poloniex",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "Non-official implementation of Poloniex's API's",
   "main": "index.js",
   "directories": {
