@@ -1,6 +1,6 @@
 {
   "name": "node-api-poloniex",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "description": "Non-official implementation of Poloniex's API's",
   "main": "index.js",
   "jest": {
@@ -21,7 +21,7 @@
   },
   "keywords": [
     "poloniex",
-    "ws"
+    "tradebots.nl"
   ],
   "author": "Alexander Hagen",
   "license": "ISC",
