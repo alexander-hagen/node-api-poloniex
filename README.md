@@ -11,7 +11,7 @@ Websocket keep connection alive by sending ping at 20 sec intervals
 ## __PUBLIC API__
 
 ```javascript
-  const poloniex=require('node-api-bitrue');
+  const poloniex=require('node-api-poloniex');
 
   const publicAPI=new poloniex.publicApi();
 
