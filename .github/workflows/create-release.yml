@@ -9,11 +9,11 @@ jobs:
   patch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: npm version patch # --no-git-tag-version
+      - run: npm run patch
 
   release:
     needs: patch
