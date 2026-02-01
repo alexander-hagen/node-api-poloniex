@@ -1,6 +1,6 @@
-# This workflow will bump minor version and create a new release
+# This workflow will bump patch version and create a new release
 
-name: Create minor release
+name: Create patch release
 
 on:
   workflow_dispatch:
@@ -13,19 +13,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm version minor --no-git-tag-version
+      - run: npm version patch # --no-git-tag-version
 
   release:
     needs: patch
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: comnoco/create-release@v2
+      - uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: v${{ github.ref }}
           body: |
             See README for current documentation.
           draft: false
