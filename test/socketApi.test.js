@@ -136,7 +136,7 @@ describe('Public', () => {
     await publicAPI.clearHandler('ticker.update');
     await publicAPI.clearHandler('book');
     await publicAPI.clearHandler('book.update');
-    await publicAPI.socket.terminate();
+    if (publicAPI.socket && publicAPI.socket._ws) { publicAPI.socket._ws.terminate(); };
     await waitForConnection(publicAPI);
   });
 
@@ -183,10 +183,9 @@ describe('Private', () => {
   afterAll(async () => { // clean-up socket
     await privateAPI.clearHandler('orders');
     await privateAPI.clearHandler('balances');
-    privateAPI.socket.terminate();
+    if (privateAPI.socket && privateAPI.socket._ws) { privateAPI.socket._ws.terminate(); };
     await waitForConnection(privateAPI);
   });
-
 });
 
 // Error testing

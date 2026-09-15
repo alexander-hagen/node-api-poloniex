@@ -104,11 +104,8 @@ describe('Orders', () => {
   // PoloniexPrivate.prototype.cancelSpotOrder = async function(options) {
   // PoloniexPrivate.prototype.cancelSpotOrders = async function(options) {
 
-  // PoloniexPrivate.prototype.cancelAllSpotOrders = async function(options={}) {
-
   test('Test cancelAllSpotOrders() function', async () => {
-    const result=await privateAPI.cancelAllSpotOrders()
-    expect(result === "" || stringIsJSON(result)).toBe(true); // "" if none, {} if 1+ orders to cancel
+    expect(stringIsArray(await privateAPI.cancelAllSpotOrders({accountTypes: ["SPOT"]}))).toBe(true);
   }, timeout);
 
   test('Test setKillSwitch() function', async () => {
