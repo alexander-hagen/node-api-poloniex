@@ -1,6 +1,6 @@
 # node-api-poloniex
 
-![Statements](https://img.shields.io/badge/statements-66.21%25-red.svg?style=flat) ![Branches](https://img.shields.io/badge/branches-44.33%25-red.svg?style=flat) ![Functions](https://img.shields.io/badge/functions-65.51%25-red.svg?style=flat) ![Lines](https://img.shields.io/badge/lines-71.9%25-red.svg?style=flat)
+![Statements](https://img.shields.io/badge/statements-68.5%25-red.svg?style=flat) ![Branches](https://img.shields.io/badge/branches-44.54%25-red.svg?style=flat) ![Functions](https://img.shields.io/badge/functions-64.91%25-red.svg?style=flat) ![Lines](https://img.shields.io/badge/lines-73.98%25-red.svg?style=flat)
 
 Non-official implementation of Poloniex's API's. Developed for personal use.
 
